@@ -1,9 +1,14 @@
 from point3d import point3d
 
-p3d1 = point3d(1.1, 2.2, 3.3)
-p3d2 = point3d(1.2, 2.3, 3.4)
+p3d1 = point3d(1.0, 2.0, 3.0)
+p3d2 = point3d(2.0, 2.5, 5.0)
+p3d3 = point3d(3.0, 4.5, 6.0)
 
-res = p3d1.distanse_to(p3d2)
+a = p3d1.distanse_to(p3d2)
+b = p3d2.distanse_to(p3d3)
+c = p3d3.distanse_to(p3d1)
+
+res = p3d1.geron(a, b, c)
 
 print(res)
 
