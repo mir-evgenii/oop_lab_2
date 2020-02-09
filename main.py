@@ -8,7 +8,7 @@ a = p3d1.distanse_to(p3d2)
 b = p3d2.distanse_to(p3d3)
 c = p3d3.distanse_to(p3d1)
 
-res = p3d1.geron(a, b, c)
+res = point3d.compute_area(a, b, c)
 
-print(res)
+print('Площадь треугольника = ' + str(res))
 
